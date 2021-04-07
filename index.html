@@ -14,115 +14,141 @@
     <header id="home">
       <!-- Top Navigation Content -->
         <nav class="topnav">
+          <div class="container">
           <img title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/>
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#services">Services</a>
-          <a href="#team">Team</a>
-          <a href="#contact">Contact</a>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
           <!-- Search Bar -->
-          <input type="text" placeholder="Search">
-          <i class="far fa-search"></i>
-        </nav>
+              <form class="search">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="far fa-search"></i></button>
+              </form>
+          </div> <!-- End of container -->
+        </nav> <!-- End of topnav -->
 
+      <!-- Intro Section -->
+      <div class="intro">
+        <div class="container">
         <h1 class="site-title">Welcome to Three Star Media</h1>  
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Tempus urna et pharetra pharetra massa.</p>
-
         <button type="button">Connect with us  <i class="fas fa-caret-right"></i></button>
         <br><br>
         <img src="images/main-banner.jpg" alt="Wide image of an office environment, placed within the header section."/>
-
+        </div> <!-- End of container -->
+      </div> <!-- End of Intro section -->
     </header>
         
     <main>
       <!-- About Us Section -->
-      <section id="about" class="about-us">
-        <h2>About Us</h2>
-
-        <img src="images/about-us.jpg" alt="Image of a ping pong table, placed within the About Us section."/>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pharetra vel turpis nunc. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Sed arcu non odio euismod.
-        <br>
-        Rutrum quisque non tellus orci ac. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi quis eleifend quam adipiscing vitae proin. Quisque egestas diam in arcu. Scelerisque in dictum non consectetur a erat nam at lectus. Eget lorem dolor sed viverra ipsum. Amet commodo nulla facilisi nullam vehicula ipsum.</p>
-      </section>
+      <section id="about" class="section-about-us">
+      <div class="about-container">
+        <div class="image-container">
+          <img src="images/about-us.jpg" alt="Image of a ping pong table, placed within the About Us section."/>
+        </div> <!-- End of image-container -->
+        <div class="text-container">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pharetra vel turpis nunc. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Sed arcu non odio euismod.
+            <br>
+            Rutrum quisque non tellus orci ac. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi quis eleifend quam adipiscing vitae proin. Quisque egestas diam in arcu. Scelerisque in dictum non consectetur a erat nam at lectus. Eget lorem dolor sed viverra ipsum. Amet commodo nulla facilisi nullam vehicula ipsum.</p>
+        </div> <!-- End of text-container -->
+      </div> <!-- End of about-container -->
+      </section> <!-- End of About Us section -->
 
       <!-- Our Services Section -->
-      <section id="services" class="our-services">
+      <section id="services" class="section-our-services">
+      <div class="services-grid-container">
           <h2>Our Services</h2>
-          <br>
+            <div class="digital-container">
               <img src="images/digital.jpg" alt="Image of an employee at their desk, looking at a laptop and mobile device."/>
-              
               <h3>Digital Transformation</h3>
-               <br>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                  <!-- Digital Plans Link -->
                    <button type="button">Digital Plans  <i class="fas fa-caret-right"></i></button>
+            </div>  <!-- End of digital-container -->
 
+            <div class="marketing-container"> 
                 <img src="images/marketing.jpg" alt="Image of an open laptop with a marketing graph being displayed atop a modern desk."/>
-
                 <h3>Marketing</h3>
-                <br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                   <!-- Marketing Plans Link -->
                     <button type="button">Marketing Plans  <i class="fas fa-caret-right"></i></button>
+            </div>  <!-- End of marketing-container -->
 
+            <div class="video-container"> 
               <img src="images/video.jpg" alt="Image of a person's hand holding a mobile device, displaying a video on the screen."/>
-
               <h3>Video Production</h3>
-              <br>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                  <!-- Video Production Plans Link -->
                   <button type="button">Video Plans  <i class="fas fa-caret-right"></i></button>
+                </div>  <!-- End of video-container -->
 
+            <div class="web-container">
               <img src="images/web.jpg" alt="Image of a mobile device and stylus pen, sitting atop an open notebook with gridlines on the page."/>
-
               <h3>Web Development</h3>
-              <br>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                 <!-- Web Development Plans Link -->
                 <button type="button">Web Plans  <i class="fas fa-caret-right"></i></button>
+            </div>  <!-- End of web-container -->
 
+            <div class="print-container">
               <img src="images/print.jpg" alt="Image of an outdoor bank of newspaper distribution boxes."/>
-
               <h3>Print</h3>
-              <br>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                 <!-- Print Plans Link -->
                 <button type="button">Print Plans  <i class="fas fa-caret-right"></i></button>
-        </section>
+              </div>  <!-- End of print-container -->
+
+          </div> <!-- End of services-grid-container -->
+        </section> <!-- End of Our Services section -->
         
       <!-- Our Vision Section -->
-      <section class="our-vision">
+      <section class="section-our-vision">
+        <div class="vision-container">
+          <div class="container">
           <img src="images/vision.jpg" alt="Image of several folded paper boats sitting atop a white and reflective surface."/>
-
           <h2>Our Vision</h2>
-          <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas ultricies mi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.</p>
-
             <!-- Learn More Link -->
               <button type="button">Learn More  <i class="fas fa-caret-right"></i></button>
-
-      </section>
+          </div> <!-- End of container -->
+        </div> <!-- End of vision-container -->
+      </section> <!-- End of Our Vision section -->
 
       <!-- Our Team Section -->
-      <section id="team" class="our-team">
+      <section id="team" class="section-our-team">
+        <div class="team-container">
           <h2>Our Team</h2>
-          <br>
+          <div class="john-image">
             <img title="John Doe" src="images/john.jpg" alt="Image of John Doe."/>
+          </div> <!-- End of John's image div -->
+          <div class="john-text">
             <h3>John Doe</h3>
               <h5> <abbr title="Chief Executive Officer">CEO and Co-Owner </abbr> </h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At ultrices mi tempus imperdiet nulla malesuada pellentesque. At imperdiet dui accumsan sit amet. Hac habitasse platea dictumst vestibulum.</p>
-            <br>
+          </div> <!-- End of John's text div -->
+          <div class="bob-image">
             <img title="Bob Rite" src="images/bob.jpg" alt="Image of Bob Rite."/>
+          </div> <!-- End of Bob's image div -->
+          <div class="bob-text">
             <h3>Bob Rite</h3>
               <h5> <abbr title="Chief Financial Officer">CFO and Co-Owner </abbr> </h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At ultrices mi tempus imperdiet nulla malesuada pellentesque. At imperdiet dui accumsan sit amet. Hac habitasse platea dictumst vestibulum.</p>
-      </section>
+          </div><!-- End of Bob's text div -->
+
+        </div> <!-- End of team-container -->
+      </section> <!-- End of Our Team section -->
 
       <!-- Contact Us Section -->
-      <section id="contact" class="contact-us">
+      <section id="contact" class="section-contact-us">
+        <div class="contact-us-container">
           <h2>Contact Us</h2>
               <!-- Send Us a Message Section -->
+              <div class="email-us-container">
                 <h3>Send us a Message</h3>
                   <form action="https://formspree.io" method="post">
                     <label for="fullname">Full Name</label><br>
@@ -134,14 +160,18 @@
                     <br>
                     <input type="submit" value="Send">
                   </form>
+              </div> <!-- End of Email Us container -->
 
               <!-- Embedded Map Location Section -->
-              <h3>Location</h3>
-              <address>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.039149426828!2d-75.7591114839895!3d45.34802197909979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1617806024863!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-              </address>
+              <div class="location-container">
+                <h3>Location</h3>
+                <address>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.039149426828!2d-75.7591114839895!3d45.34802197909979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1617806024863!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </address>
+              </div> <!-- End of Location container -->
 
               <!-- Hours of Operation Section -->
+              <div class="hours-container">
               <h3>Hours of operation</h3>
               <table>
                 <thead>
@@ -161,15 +191,20 @@
                   </tr>
                 </tbody>
               </table>
-      </section>
+            </div> <!-- End of Hours container -->
+        </div> <!-- End of Contact Us container -->
+      </section> <!-- End of Contact Us section -->
     </main>
 
   <!-- Footer Content -->
     <footer>
+      <div class="section-copyright">
       <!-- Copyright Info -->
-        <br>
+      <div class="copyright-container">
         <p><sup>&copy;</sup> Copyright Three Star Media, 2020</p>
         <p>All images are taken from <a href="https://unsplash.com">Unsplash</a></p>
+      </div> <!-- End of copyright container -->
+    </div> <!-- End of copyright section -->
     </footer>
   </body>
 </html>
