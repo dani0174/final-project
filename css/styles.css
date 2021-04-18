@@ -73,8 +73,12 @@
 
 .HeaderWrapper {
 	width: 100%;
-	height: ;
 	background-color:black;
+}
+
+.WelcomeButton {
+	color: black;
+	background-color: #c78c06;
 }
 
 .VisionWrapper {
@@ -82,6 +86,14 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.table, th, td {
+	border: 1px solid black;
+}
+
+.table, th {
+	background-color: #ffe6ac;
 }
 
 .FooterWrapper {
@@ -153,12 +165,11 @@ h2{
 
 /* =============== Navigation Section CSS =============== */
 
-
-
 a:link, a.visited {
     color:#c78c06;
     text-decoration: none;
 }
+
 /* End of Top Navigation CSS */
 
 /* =============== Welcome Section CSS =============== */
@@ -205,32 +216,46 @@ a:link, a.visited {
 /* --------------- Mobile Styling Ends Here --------------- */
 /* ********************************************************** */
 
+/* -------------------------------------------------------------------- */
 
 /* *********************************************************** */
 /* =============== Desktop Styling Begins Here =============== */
 
 @media screen and (min-width: 760px) {
 
-
-
 /* =============== Navigation Section CSS =============== */
 
 .NavWrapper {
 	display: flex;
-	width: 83%;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-.MenuWrapper {
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
+	flex-wrap: none;
+	width: 100%;
+	justify-content: center;
 }
 
 a:link, a.visited {
     color:#c78c06;
     text-decoration: none;
+}
+
+.MenuWrapper :nth-child(2) {
+		background-color: #c78c06;
+		color: black;
+}
+
+.MenuWrapper :nth-child(7) {
+	padding: 0;
+}
+
+.MenuWrapper :nth-child(8) {
+	padding: 0;
+}
+
+.navLink {
+	padding: 3px;
+}
+
+ul#horizontal-menu li {
+	display: inline-flex;
 }
 
 /* End of Top Navigation CSS */
@@ -241,8 +266,10 @@ a:link, a.visited {
 	.Welcome {
 		width: 83%;
 		height: 505px;
-		padding: 1em;
 		background-color:rgba(46, 49, 49, 0.5); 
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	.WelcomeWrapper {
@@ -262,11 +289,15 @@ a:link, a.visited {
 .AboutUsWrapper {
 	display: flex;
 	background-color: #ffe6ac;
-	width: 83%;
+	width: 100%;
+	justify-content: space-evenly;
 }
 
 .AboutUsImage {
-	width: 50%;
+	width: 42%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .AboutUsText {
@@ -274,15 +305,16 @@ a:link, a.visited {
 	font-weight: regular;
 	font-size: 16px;
 	line-height: 24px;
-	width: 50%;
+	width: 42%;
+	display: flex;
 }
 
 /* =============== Our Services Section CSS =============== */
 
-	.services-grid-container {
+	.OurServices {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: repeat(3, 200px);
+		grid-template-rows: repeat(2, 200px);
 	}
 
 /* =============== Our Vision Section CSS =============== */
@@ -290,11 +322,20 @@ a:link, a.visited {
 
 /* =============== Our Team Section CSS =============== */
 
+.OurTeam {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 400px);
+}
 
 
 /* =============== Contact Us Section CSS =============== */
 
-
+.ContactUs {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 300px);
+}
 	
 
 

@@ -16,31 +16,21 @@
     <header id="home" class="Flex-Container HeaderWrapper">
       <!-- Top Navigation Content -->
         <nav class="Flex-Container NavWrapper">
-        
-              <div class="Flex-Box Logo"> 
-                  <img title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/>
-                  
-              </div> <!-- End of Logo -->
-
+         
               <div class="Flex-Container MenuWrapper">
-                <ul>
-                    <li><a href="#home" class="navLink">Home</a></li>
-                    <li><a href="#about" class="navLink">About Us</a></li>
-                    <li><a href="#services" class="navLink">Services</a></li>
-                    <li><a href="#team" class="navLink">Team</a></li>
-                    <li><a href="#contact"class="navLink">Contact</a></li>
+                <ul id="horizontal-menu">
+                    <li class="navLink"><a href="#home"><img title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/></a></li>
+                    <li class="navLink"><a href="#home">Home</a></li>
+                    <li class="navLink"><a href="#about" class="navLink">About Us</a></li>
+                    <li class="navLink"><a href="#services" class="navLink">Services</a></li>
+                    <li class="navLink"><a href="#team" class="navLink">Team</a></li>
+                    <li class="navLink"><a href="#contact"class="navLink">Contact</a></li>                 
+                    <li class="navLink"><input type="text"placeholder="Search"name="search"></form></li>
+                    <li class="navLink"><button type="submit"><i class="fa fa-search"></i></button></li>
                 </ul> 
               </div> <!-- End of MenuWrapper -->
-
-          <!-- Search Bar -->
-            <div class="Flex-Box SearchBar">
-                <form class="search">
-                    <input type="text" placeholder="Search" name="search">
-                    <button type="submit"><i class="far fa-search"></i></button>
-                </form>
-            </div> <!-- End of SearchBar -->
-         
-        </nav> <!-- End of NavWrapper section -->
+          
+        </nav> <!-- End of TopNav section -->
 
       <!-- =============== Welcome Section =============== -->
       <div class="Flex-Container WelcomeWrapper" style="background-image: url('images/main-banner.jpg');">
@@ -48,7 +38,7 @@
         <div class="Flex-Box Welcome">
             <h1 class="site-title">Welcome to Three Star Media</h1>  
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Tempus urna et pharetra pharetra massa.</p>
-            <button type="button">Connect with us  <span class="icon">&#9654;</span></button>
+            <button class="WelcomeButton" type="button">Connect with us  <span class="icon">&#9654;</span></button>
             <br><br>
           <!-- <img src="images/main-banner.jpg" alt="Wide image of an office environment."/>  -->
         </div> <!-- End of welcome-container -->
@@ -75,8 +65,11 @@
 
       <!-- =============== Our Services Section =============== -->
       <section id="services" class="section-our-services">
-      <div class="container">
-          <h2>Our Services</h2>
+
+      <h2>Our Services</h2>
+
+      <div class="Container OurServices">
+          
             <div class="servicesContainer digital-container">
               <img src="images/digital.jpg" alt="Image of an employee at their desk, looking at a laptop and mobile device."/>
               <h3>Digital Transformation</h3>
@@ -134,8 +127,11 @@
 
       <!-- =============== Our Team Section =============== -->
       <section id="team" class="section-our-team">
-        <div class="container">
-          <h2>Our Team</h2>
+
+        <h2>Our Team</h2>
+
+        <div class="Container OurTeam">
+          
           <div class="john-image">
             <img title="John Doe" src="images/john.jpg" alt="Image of John Doe."/>
           </div> <!-- End of John's image div -->
@@ -158,10 +154,13 @@
 
       <!-- =============== Contact Us Section =============== -->
       <section id="contact" class="section-contact-us">
-        <div class="container">
-          <h2>Contact Us</h2>
+
+        <h2>Contact Us</h2>
+
+        <div class="Container ContactUs">
+          
               <!-- Send Us a Message Section -->
-              <div class="email-us-container">
+              <div class="EmailUs">
                 <h3>Send us a Message</h3>
                   <form action="https://formspree.io" method="post">
                     <label for="fullname">Full Name</label><br>
@@ -173,10 +172,10 @@
                     <br>
                     <input type="submit" value="Send">
                   </form>
-              </div> <!-- End of Email Us container -->
+              </div> <!-- End of Email Us -->
 
               <!-- Embedded Map Location Section -->
-              <div class="location-container">
+              <div class="Location">
                 <h3>Location</h3>
                 <address>
                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.039149426828!2d-75.7591114839895!3d45.34802197909979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1617806024863!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -184,9 +183,9 @@
               </div> <!-- End of Location container -->
 
               <!-- Hours of Operation Section -->
-              <div class="hours-container">
+              <div class="Hours">
               <h3>Hours of operation</h3>
-              <table>
+              <table class="HoursTable">
                 <thead>
                   <tr>
                     <th>Days</th>
