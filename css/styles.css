@@ -1,0 +1,308 @@
+/* This is my main CSS file for the final class assignment - Responsive Web Design */
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+/* ================================================================================== */
+	/* =============== Final Responsive Web Design I Class Assignment =============== */
+/* ================================================================================== */
+
+/* ********************************************************* */
+/* =============== Common Elements Begin Here =============== */
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+.Wrap {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.HeaderWrapper {
+	width: 100%;
+	height: ;
+	background-color:black;
+}
+
+.VisionWrapper {
+	color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.FooterWrapper {
+	width: 100%;
+	height: ;
+	background-color: black;
+	color:#c78c06;
+	display: flex;
+}
+
+.Copyright {
+	padding-left: 6em;
+	padding-top: 2em;
+	padding-bottom: 2em;	
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	background-color: #FFFFFF;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+	font-size: 100%;
+	line-height: 1.5;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 21px;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+	font-weight: bold;
+	font-size: 71px;
+	line-height: 98px;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 98px;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------- Common Elements End Here --------------- */
+/* ******************************************************** */
+
+
+
+/* ********************************************************** */
+/* =============== Mobile Styling Begins Here =============== */
+
+
+
+/* =============== Navigation Section CSS =============== */
+
+
+
+a:link, a.visited {
+    color:#c78c06;
+    text-decoration: none;
+}
+/* End of Top Navigation CSS */
+
+/* =============== Welcome Section CSS =============== */
+
+
+}
+
+/* =============== About Us Section CSS =============== */
+
+
+
+/* =============== Our Services Section CSS =============== */
+
+.services-grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 5;
+}
+
+
+.servicesContainer {
+	background-color: #ffe6ac;
+}
+
+
+/* =============== Our Vision Section CSS =============== */
+
+
+
+/* =============== Our Team Section CSS =============== */
+
+.john-text {
+	background-color: #ffe6ac;
+}
+
+.bob-text {
+	background-color: #ffe6ac;
+}
+
+/* =============== Contact Us Section CSS =============== */
+
+
+
+/* --------------- Mobile Styling Ends Here --------------- */
+/* ********************************************************** */
+
+
+/* *********************************************************** */
+/* =============== Desktop Styling Begins Here =============== */
+
+@media screen and (min-width: 760px) {
+
+
+
+/* =============== Navigation Section CSS =============== */
+
+.NavWrapper {
+	display: flex;
+	width: 83%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.MenuWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+a:link, a.visited {
+    color:#c78c06;
+    text-decoration: none;
+}
+
+/* End of Top Navigation CSS */
+
+
+/* =============== Welcome Section CSS =============== */
+
+	.Welcome {
+		width: 83%;
+		height: 505px;
+		padding: 1em;
+		background-color:rgba(46, 49, 49, 0.5); 
+	}
+
+	.WelcomeWrapper {
+		width: 100%;
+		height: 600px;
+		color: white;
+		display: flex;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		align-items: center;
+		justify-content: center;
+	}
+
+/* =============== About Us Section CSS =============== */
+
+.AboutUsWrapper {
+	display: flex;
+	background-color: #ffe6ac;
+	width: 83%;
+}
+
+.AboutUsImage {
+	width: 50%;
+}
+
+.AboutUsText {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: regular;
+	font-size: 16px;
+	line-height: 24px;
+	width: 50%;
+}
+
+/* =============== Our Services Section CSS =============== */
+
+	.services-grid-container {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(3, 200px);
+	}
+
+/* =============== Our Vision Section CSS =============== */
+
+
+/* =============== Our Team Section CSS =============== */
+
+
+
+/* =============== Contact Us Section CSS =============== */
+
+
+	
+
+
+} /* Desktop media screen bracket ends here */
+
+
+
+/* --------------- Desktop Styling Ends Here --------------- */
+/* ********************************************************* */
+
+/* Comments... I love comments!  LOL  }:-) */

@@ -5,123 +5,136 @@
 <!-- Document Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>  
-    <title>Three Star Media</title>
-    <script src="https://kit.fontawesome.com/3c357af697.js" crossorigin="anonymous"></script>
+    <title>Three Star Media Page Mock-up Assignment - Mark Daniels</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5a45a40e3.js" crossorigin="anonymous"></script>
   </head>
 
 <!-- Document Content -->
   <body> 
-    <header id="home">
+  <div class="Wrap">
+    <header id="home" class="Flex-Container HeaderWrapper">
       <!-- Top Navigation Content -->
-        <nav class="topnav">
-          <div class="container">
-          <img title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <!-- Search Bar -->
-              <form class="search">
-                <input type="text" placeholder="Search" name="search">
-                <button type="submit"><i class="far fa-search"></i></button>
-              </form>
-          </div> <!-- End of container -->
-        </nav> <!-- End of topnav -->
+        <nav class="Flex-Container NavWrapper">
+        
+              <div class="Flex-Box Logo"> 
+                  <img title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/>
+                  
+              </div> <!-- End of Logo -->
 
-      <!-- Intro Section -->
-      <div class="intro">
-        <div class="container">
-        <h1 class="site-title">Welcome to Three Star Media</h1>  
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Tempus urna et pharetra pharetra massa.</p>
-        <button type="button">Connect with us  <i class="fas fa-caret-right"></i></button>
-        <br><br>
-        <img src="images/main-banner.jpg" alt="Wide image of an office environment, placed within the header section."/>
-        </div> <!-- End of container -->
-      </div> <!-- End of Intro section -->
+              <div class="Flex-Container MenuWrapper">
+                <ul>
+                    <li><a href="#home" class="navLink">Home</a></li>
+                    <li><a href="#about" class="navLink">About Us</a></li>
+                    <li><a href="#services" class="navLink">Services</a></li>
+                    <li><a href="#team" class="navLink">Team</a></li>
+                    <li><a href="#contact"class="navLink">Contact</a></li>
+                </ul> 
+              </div> <!-- End of MenuWrapper -->
+
+          <!-- Search Bar -->
+            <div class="Flex-Box SearchBar">
+                <form class="search">
+                    <input type="text" placeholder="Search" name="search">
+                    <button type="submit"><i class="far fa-search"></i></button>
+                </form>
+            </div> <!-- End of SearchBar -->
+         
+        </nav> <!-- End of NavWrapper section -->
+
+      <!-- =============== Welcome Section =============== -->
+      <div class="Flex-Container WelcomeWrapper" style="background-image: url('images/main-banner.jpg');">
+        
+        <div class="Flex-Box Welcome">
+            <h1 class="site-title">Welcome to Three Star Media</h1>  
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Tempus urna et pharetra pharetra massa.</p>
+            <button type="button">Connect with us  <span class="icon">&#9654;</span></button>
+            <br><br>
+          <!-- <img src="images/main-banner.jpg" alt="Wide image of an office environment."/>  -->
+        </div> <!-- End of welcome-container -->
+      
+      </div> <!-- End of WelcomeWrapper section -->
     </header>
         
     <main>
-      <!-- About Us Section -->
+      <!-- =============== About Us Section =============== -->
       <section id="about" class="section-about-us">
-      <div class="about-container">
-        <div class="image-container">
-          <img src="images/about-us.jpg" alt="Image of a ping pong table, placed within the About Us section."/>
+      <div class="Flex-Container AboutUsWrapper"> 
+        <div class="Flex-Box AboutUsImage" style="background-image: url('images/about-us.jpg');" alt="Image of a ping pong table, placed within the About Us section.">
+          
         </div> <!-- End of image-container -->
-        <div class="text-container">
+
+        <div class="Flex-Box AboutUsText">
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pharetra vel turpis nunc. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Sed arcu non odio euismod.
             <br>
             Rutrum quisque non tellus orci ac. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi quis eleifend quam adipiscing vitae proin. Quisque egestas diam in arcu. Scelerisque in dictum non consectetur a erat nam at lectus. Eget lorem dolor sed viverra ipsum. Amet commodo nulla facilisi nullam vehicula ipsum.</p>
         </div> <!-- End of text-container -->
-      </div> <!-- End of about-container -->
+      </div> <!-- End of about-us-container -->
       </section> <!-- End of About Us section -->
 
-      <!-- Our Services Section -->
+      <!-- =============== Our Services Section =============== -->
       <section id="services" class="section-our-services">
-      <div class="services-grid-container">
+      <div class="container">
           <h2>Our Services</h2>
-            <div class="digital-container">
+            <div class="servicesContainer digital-container">
               <img src="images/digital.jpg" alt="Image of an employee at their desk, looking at a laptop and mobile device."/>
               <h3>Digital Transformation</h3>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                  <!-- Digital Plans Link -->
-                   <button type="button">Digital Plans  <i class="fas fa-caret-right"></i></button>
+                   <button type="button">Digital Plans  <span class="icon">&#9654;</span></button>
             </div>  <!-- End of digital-container -->
 
-            <div class="marketing-container"> 
+            <div class="servicesContainer marketing-container"> 
                 <img src="images/marketing.jpg" alt="Image of an open laptop with a marketing graph being displayed atop a modern desk."/>
                 <h3>Marketing</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                   <!-- Marketing Plans Link -->
-                    <button type="button">Marketing Plans  <i class="fas fa-caret-right"></i></button>
+                    <button type="button">Marketing Plans  <span class="icon">&#9654;</span></button>
             </div>  <!-- End of marketing-container -->
 
-            <div class="video-container"> 
+            <div class="servicesContainer video-container"> 
               <img src="images/video.jpg" alt="Image of a person's hand holding a mobile device, displaying a video on the screen."/>
               <h3>Video Production</h3>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                  <!-- Video Production Plans Link -->
-                  <button type="button">Video Plans  <i class="fas fa-caret-right"></i></button>
+                  <button type="button">Video Plans  <span class="icon">&#9654;</span></button>
                 </div>  <!-- End of video-container -->
 
-            <div class="web-container">
+            <div class="servicesContainer web-container">
               <img src="images/web.jpg" alt="Image of a mobile device and stylus pen, sitting atop an open notebook with gridlines on the page."/>
               <h3>Web Development</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                 <!-- Web Development Plans Link -->
-                <button type="button">Web Plans  <i class="fas fa-caret-right"></i></button>
+                <button type="button">Web Plans  <span class="icon">&#9654;</span></button>
             </div>  <!-- End of web-container -->
 
-            <div class="print-container">
+            <div class="servicesContainer print-container">
               <img src="images/print.jpg" alt="Image of an outdoor bank of newspaper distribution boxes."/>
               <h3>Print</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                 <!-- Print Plans Link -->
-                <button type="button">Print Plans  <i class="fas fa-caret-right"></i></button>
+                <button type="button">Print Plans  <span class="icon">&#9654;</span></button>
               </div>  <!-- End of print-container -->
 
           </div> <!-- End of services-grid-container -->
         </section> <!-- End of Our Services section -->
         
-      <!-- Our Vision Section -->
+      <!-- =============== Our Vision Section =============== -->
       <section class="section-our-vision">
-        <div class="vision-container">
-          <div class="container">
-          <img src="images/vision.jpg" alt="Image of several folded paper boats sitting atop a white and reflective surface."/>
+        <div class="Flex-Container VisionWrapper" style="background-image: url('images/vision.jpg');" alt="Image of several folded paper boats sitting atop a white and reflective surface.">
+          <div class="Flex-Box Vision">          
           <h2>Our Vision</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas ultricies mi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.</p>
             <!-- Learn More Link -->
-              <button type="button">Learn More  <i class="fas fa-caret-right"></i></button>
+              <button type="button">Learn More  <span class="icon">&#9654;</span></button>
           </div> <!-- End of container -->
         </div> <!-- End of vision-container -->
       </section> <!-- End of Our Vision section -->
 
-      <!-- Our Team Section -->
+      <!-- =============== Our Team Section =============== -->
       <section id="team" class="section-our-team">
-        <div class="team-container">
+        <div class="container">
           <h2>Our Team</h2>
           <div class="john-image">
             <img title="John Doe" src="images/john.jpg" alt="Image of John Doe."/>
@@ -143,9 +156,9 @@
         </div> <!-- End of team-container -->
       </section> <!-- End of Our Team section -->
 
-      <!-- Contact Us Section -->
+      <!-- =============== Contact Us Section =============== -->
       <section id="contact" class="section-contact-us">
-        <div class="contact-us-container">
+        <div class="container">
           <h2>Contact Us</h2>
               <!-- Send Us a Message Section -->
               <div class="email-us-container">
@@ -196,16 +209,20 @@
       </section> <!-- End of Contact Us section -->
     </main>
 
-  <!-- Footer Content -->
+  <!-- =============== Footer Content =============== -->
     <footer>
-      <div class="section-copyright">
-      <!-- Copyright Info -->
-      <div class="copyright-container">
-        <p><sup>&copy;</sup> Copyright Three Star Media, 2020</p>
-        <p>All images are taken from <a href="https://unsplash.com">Unsplash</a></p>
-      </div> <!-- End of copyright container -->
-    </div> <!-- End of copyright section -->
+    <div class="Flex-Container FooterWrapper">  
+        <div class="Flex-Box Copyright">
+        
+            <p><sup>&copy;</sup> Copyright Three Star Media, 2020</p>
+            <br>
+            <p>All images are taken from <a href="https://unsplash.com">Unsplash</a></p>
+          
+        </div> <!-- End of Copyright Flex-Box -->
+      </div> <!-- End of Footer Flex-Container -->
     </footer>
+    </div>  <!-- End of Wrap container -->
+   
   </body>
 </html>
 <!-- Comments... I love comments!  LOL  }:-) -->
