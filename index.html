@@ -6,17 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>  
     <title>Three Star Media Page Mock-up Assignment - Mark Daniels</title>
+    
+    
     <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/c5a45a40e3.js" crossorigin="anonymous"></script>
+
   </head>
 
 <!-- Document Content -->
   <body> 
   <div class="Wrap">
-    <header id="home" class="Flex-Container HeaderWrapper">
+
+    <!-- =============== Header Section =============== -->
+    <header id="home">
       <!-- Top Navigation Content -->
-        <nav class="Flex-Container NavWrapper">
-              <div class="Flex-Container MenuWrapper">
+        <nav class="Container NavWrapper">
+              <div class="Container MenuWrapper">
                 <ul id="horizontal-menu">
                     <li class="navLink"><a href="#home"><img title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/></a></li>
                     <li class="navLink"><a href="#home">Home</a></li>
@@ -24,15 +33,15 @@
                     <li class="navLink"><a href="#services">Services</a></li>
                     <li class="navLink"><a href="#team">Team</a></li>
                     <li class="navLink"><a href="#contact">Contact</a></li>                 
-                    <li class="navLink"><input type="text"placeholder="Search"name="search"></form></li>
-                    <li class="navLink"><button type="submit"><i class="far fa-search"></i></button></li>
+                    <li class="navLink"><input type="text" placeholder="Search" name="search"></li>
+                    <li class="navLink"><button class="SendButton" type="submit"><i class="far fa-search"></i></button></li>
                 </ul> 
               </div> <!-- End of MenuWrapper -->
         </nav> <!-- End of TopNav section -->
 
         <!-- Top Navigation Content - Alternative Version -->
-        <nav class="Flex-Container NavWrapper2">
-          <div class="Flex-Container MenuWrapper2">
+        <nav class="Container NavWrapper2">
+          <div class="Grid-Container MenuWrapper2">
       
                 <div class="navLink menuLogo"><a href="#home"><img title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/></a></div>
                 <div class="navLink menuHome"><a href="#home">Home</a></div>
@@ -40,15 +49,17 @@
                 <div class="navLink menuServices"><a href="#services">Services</a></div>
                 <div class="navLink menuTeam"><a href="#team">Team</a></div>
                 <div class="navLink menuContact"><a href="#contact">Contact</a></div>                
-                <div class="navLink menuSearch"><input type="text"placeholder="Search"name="search"></form><button type="submit"><i class="fa fa-search"></i></button></div>
+                <div class="navLink menuSearch"><input type="text" placeholder="Search" name="search"><button class="SendButton" type="submit"><i class="fa fa-search"></i></button></div>
             
           </div> <!-- End of MenuWrapper2 -->
-    </nav> <!-- End of TopNav section2 -->
+        </nav> <!-- End of TopNav section2 -->
+
+    </header> <!-- End of Header Section -->
 
       <!-- =============== Welcome Section =============== -->
-      <div class="Flex-Container WelcomeWrapper" style="background-image: url('images/main-banner.jpg');">
+      <div class="Container WelcomeWrapper" style="background-image: url('images/main-banner.jpg');">
         
-        <div class="Flex-Box Welcome">
+        <div class="Container Welcome">
             <h1 class="site-title">Welcome to Three Star Media</h1>  
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Tempus urna et pharetra pharetra massa.</p>
             <button class="WelcomeButton" type="button">Connect with us  <span class="icon">&#9654;</span></button>
@@ -57,17 +68,16 @@
         </div> <!-- End of welcome-container -->
       
       </div> <!-- End of WelcomeWrapper section -->
-    </header>
         
     <main>
       <!-- =============== About Us Section =============== -->
       <section id="about" class="section-about-us">
-      <div class="Flex-Container AboutUsWrapper"> 
-        <div class="Flex-Box AboutUsImage" style="background-image: url('images/about-us.jpg');" alt="Image of a ping pong table, placed within the About Us section.">
+      <div class="Container AboutUsWrapper"> 
+        <div class="AboutUsImage" style="background-image: url('images/about-us.jpg');">
           
         </div> <!-- End of image-container -->
 
-        <div class="Flex-Box AboutUsText">
+        <div class="AboutUsText">
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pharetra vel turpis nunc. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Sed arcu non odio euismod.
             <br>
@@ -81,7 +91,7 @@
 
       <h2>Our Services</h2>
 
-      <div class="Container OurServices">
+      <div class="Grid-Container OurServices">
           
             <div class="DigitalContainer">
               <img src="images/digital.jpg" alt="Image of an employee at their desk, looking at a laptop and mobile device."/>
@@ -128,8 +138,8 @@
         
       <!-- =============== Our Vision Section =============== -->
       <section class="section-our-vision">
-        <div class="Flex-Container VisionWrapper" style="background-image: url('images/vision.jpg');" alt="Image of several folded paper boats sitting atop a white and reflective surface.">
-          <div class="Flex-Box Vision">          
+        <div class="Container VisionWrapper" style="background-image: url('images/vision.jpg');">
+          <div class="Container Vision">          
           <h2>Our Vision</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas ultricies mi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.</p>
             <!-- Learn More Link -->
@@ -143,7 +153,7 @@
 
         <h2>Our Team</h2>
 
-        <div class="Container OurTeam">
+        <div class="Grid-Container OurTeam">
           
           <div class="john-image">
             <img title="John Doe" src="images/john.jpg" alt="Image of John Doe."/>
@@ -170,7 +180,7 @@
 
         <h2>Contact Us</h2>
 
-        <div class="Container ContactUs">
+        <div class="Grid-Container ContactUs">
           
               <!-- Send Us a Message Section -->
               <div class="EmailUs">
@@ -183,7 +193,7 @@
                     <label for="message">Message</label><br>
                     <textarea id="message" name="message" required></textarea>
                     <br>
-                    <input type="submit" value="Send">
+                    <input type="submit" value="Send" class="SendButton">
                   </form>
               </div> <!-- End of Email Us -->
 
@@ -223,8 +233,8 @@
 
   <!-- =============== Footer Content =============== -->
     <footer>
-    <div class="Flex-Container FooterWrapper">  
-        <div class="Flex-Box Copyright">
+    <div class="Container FooterWrapper">  
+        <div class="Copyright">
         
             <p><sup>&copy;</sup> Copyright Three Star Media, 2020</p>
             <br>
