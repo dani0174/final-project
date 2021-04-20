@@ -28,7 +28,7 @@
               <div class="Container MenuWrapper">
                 <ul id="horizontal-menu">
                     <li class="navLink"><a href="#home"><img title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/></a></li>
-                    <li class="navLink"><a href="#home">Home</a></li>
+                    <li id="home-highlight" class="navLink"><a href="#home">Home</a></li>
                     <li class="navLink"><a href="#about">About Us</a></li>
                     <li class="navLink"><a href="#services">Services</a></li>
                     <li class="navLink"><a href="#team">Team</a></li>
@@ -44,7 +44,7 @@
           <div class="Grid-Container MenuWrapper2">
       
                 <div class="navLink menuLogo"><a href="#home"><img title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/></a></div>
-                <div class="navLink menuHome"><a href="#home">Home</a></div>
+                <div id="home-highlight" class="navLink menuHome"><a href="#home">Home</a></div>
                 <div class="navLink menuAbout"><a href="#about">About Us</a></div>
                 <div class="navLink menuServices"><a href="#services">Services</a></div>
                 <div class="navLink menuTeam"><a href="#team">Team</a></div>
@@ -53,25 +53,26 @@
             
           </div> <!-- End of MenuWrapper2 -->
         </nav> <!-- End of TopNav section2 -->
-
     </header> <!-- End of Header Section -->
 
-      <!-- =============== Welcome Section =============== -->
-      <div class="Container WelcomeWrapper" style="background-image: url('images/main-banner.jpg');">
-        
-        <div class="Container Welcome">
-            <h1 class="site-title">Welcome to Three Star Media</h1>  
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Tempus urna et pharetra pharetra massa.</p>
-            <button class="WelcomeButton" type="button">Connect with us  <span class="icon">&#9654;</span></button>
-            <br><br>
-          <!-- <img src="images/main-banner.jpg" alt="Wide image of an office environment."/>  -->
-        </div> <!-- End of welcome-container -->
-      
-      </div> <!-- End of WelcomeWrapper section -->
-        
     <main>
+
+        <!-- =============== Welcome Section =============== -->
+        <div class="Container WelcomeWrapper" style="background-image: url('images/main-banner.jpg');">
+                
+          <div class="Container Welcome">
+              <h1 class="site-title">Welcome to Three Star Media</h1>  
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Tempus urna et pharetra pharetra massa.</p>
+              <button class="WelcomeButton" type="button">Connect with us  <span class="icon">&#9654;</span></button>
+              <br><br>
+            <!-- <img src="images/main-banner.jpg" alt="Wide image of an office environment."/>  -->
+          </div> <!-- End of welcome-container -->
+
+        </div> <!-- End of WelcomeWrapper section -->
+
       <!-- =============== About Us Section =============== -->
       <section id="about" class="section-about-us">
+      <div class="Filler">  
       <div class="Container AboutUsWrapper"> 
         <div class="AboutUsImage" style="background-image: url('images/about-us.jpg');">
           
@@ -84,21 +85,24 @@
             Rutrum quisque non tellus orci ac. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi quis eleifend quam adipiscing vitae proin. Quisque egestas diam in arcu. Scelerisque in dictum non consectetur a erat nam at lectus. Eget lorem dolor sed viverra ipsum. Amet commodo nulla facilisi nullam vehicula ipsum.</p>
         </div> <!-- End of text-container -->
       </div> <!-- End of about-us-container -->
+    </div> <!-- End of Filler -->
       </section> <!-- End of About Us section -->
 
       <!-- =============== Our Services Section =============== -->
       <section id="services" class="section-our-services">
 
-      <h2>Our Services</h2>
-
       <div class="Grid-Container OurServices">
-          
+      
+        <div class="ServicesHeader">
+          <h2>Our Services</h2>
+        </div> <!-- End of Services Header -->
+
             <div class="DigitalContainer">
               <img src="images/digital.jpg" alt="Image of an employee at their desk, looking at a laptop and mobile device."/>
               <h3>Digital Transformation</h3>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                  <!-- Digital Plans Link -->
-                   <button type="button">Digital Plans  <span class="icon">&#9654;</span></button>
+                   <button class="SpanButton" type="button">Digital Plans  <span class="icon">&#9654;</span></button>
             </div>  <!-- End of digital-container -->
 
             <div class="MarketingContainer"> 
@@ -106,7 +110,7 @@
                 <h3>Marketing</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                   <!-- Marketing Plans Link -->
-                    <button type="button">Marketing Plans  <span class="icon">&#9654;</span></button>
+                    <button class="SpanButton" type="button">Marketing Plans  <span class="icon">&#9654;</span></button>
             </div>  <!-- End of marketing-container -->
 
             <div class="VideoContainer"> 
@@ -114,7 +118,7 @@
               <h3>Video Production</h3>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                  <!-- Video Production Plans Link -->
-                  <button type="button">Video Plans  <span class="icon">&#9654;</span></button>
+                  <button class="SpanButton" type="button">Video Plans  <span class="icon">&#9654;</span></button>
                 </div>  <!-- End of video-container -->
 
             <div class="WebContainer">
@@ -122,7 +126,7 @@
               <h3>Web Development</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                 <!-- Web Development Plans Link -->
-                <button type="button">Web Plans  <span class="icon">&#9654;</span></button>
+                <button class="SpanButton" type="button">Web Plans  <span class="icon">&#9654;</span></button>
             </div>  <!-- End of web-container -->
 
             <div class="PrintContainer">
@@ -130,7 +134,7 @@
               <h3>Print</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                 <!-- Print Plans Link -->
-                <button type="button">Print Plans  <span class="icon">&#9654;</span></button>
+                <button class="SpanButton" type="button">Print Plans  <span class="icon">&#9654;</span></button>
               </div>  <!-- End of print-container -->
 
           </div> <!-- End of services-grid-container -->
@@ -151,16 +155,18 @@
       <!-- =============== Our Team Section =============== -->
       <section id="team" class="section-our-team">
 
-        <h2>Our Team</h2>
-
         <div class="Grid-Container OurTeam">
-          
+        
+        <div class="TeamHeader">  
+          <h2>Our Team</h2>
+        </div> <!-- End of TeamHeader -->
+
           <div class="john-image">
             <img title="John Doe" src="images/john.jpg" alt="Image of John Doe."/>
           </div> <!-- End of John's image div -->
           <div class="john-text">
             <h3>John Doe</h3>
-              <h5> <abbr title="Chief Executive Officer">CEO and Co-Owner </abbr> </h5>
+              <h4> <abbr title="Chief Executive Officer">CEO and Co-Owner </abbr> </h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At ultrices mi tempus imperdiet nulla malesuada pellentesque. At imperdiet dui accumsan sit amet. Hac habitasse platea dictumst vestibulum.</p>
           </div> <!-- End of John's text div -->
           <div class="bob-image">
@@ -168,7 +174,7 @@
           </div> <!-- End of Bob's image div -->
           <div class="bob-text">
             <h3>Bob Rite</h3>
-              <h5> <abbr title="Chief Financial Officer">CFO and Co-Owner </abbr> </h5>
+              <h4> <abbr title="Chief Financial Officer">CFO and Co-Owner </abbr> </h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At ultrices mi tempus imperdiet nulla malesuada pellentesque. At imperdiet dui accumsan sit amet. Hac habitasse platea dictumst vestibulum.</p>
           </div><!-- End of Bob's text div -->
 
@@ -178,20 +184,22 @@
       <!-- =============== Contact Us Section =============== -->
       <section id="contact" class="section-contact-us">
 
-        <h2>Contact Us</h2>
-
         <div class="Grid-Container ContactUs">
+
+          <div class="ContactHeader">  
+              <h2>Contact Us</h2>
+          </div> <!-- End of Contact Header -->
           
               <!-- Send Us a Message Section -->
               <div class="EmailUs">
                 <h3>Send us a Message</h3>
                   <form action="https://formspree.io" method="post">
                     <label for="fullname">Full Name</label><br>
-                    <input type="text" id="fullname" name="fullname" required><br>
+                    <input class="SpanInput" type="text" id="fullname" name="fullname" required><br>
                     <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" required><br>
+                    <input class="SpanInput" type="email" id="email" name="email" required><br>
                     <label for="message">Message</label><br>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea class="SpanInput" id="message" name="message" required></textarea>
                     <br>
                     <input type="submit" value="Send" class="SendButton">
                   </form>
