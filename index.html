@@ -27,14 +27,16 @@
         <nav class="Container NavWrapper">
               <div class="Container">
                 <ul class="MenuWrap" id="horizontal-menu">
-                    <li class="navLink"><a href="#home"><img title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/></a></li>
-                    <li id="home-highlight" class="navLink"><a href="#home">Home</a></li>
-                    <li class="navLink"><a href="#about">About Us</a></li>
-                    <li class="navLink"><a href="#services">Services</a></li>
-                    <li class="navLink"><a href="#team">Team</a></li>
-                    <li class="navLink"><a href="#contact">Contact</a></li>    
+                    <div id="filler" class="FillerBox">
+                        <li id="logo" class="navLink"><a href="#home"><img title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/></a></li>
+                    </div> <!-- End of FillerBox -->
+                    <li id="home-highlight" class="navLink"><a id="home-highlight" href="#home">Home</a></li>
+                    <li id="about" class="navLink"><a href="#about">About Us</a></li>
+                    <li id="services" class="navLink"><a href="#services">Services</a></li>
+                    <li id="team" class="navLink"><a href="#team">Team</a></li>
+                    <li id="contact" class="navLink"><a href="#contact">Contact</a></li>    
                     <div class="SearchCombo">
-                        <li class="navLink"><input type="text" placeholder="Search" name="search"></li>
+                        <li class="navLink"><input id="SearchFont" type="text" placeholder="Search" name="search"></li>
                         <li class="navLink"><button class="SearchButton" type="submit"><i class="fa fa-search"></i></button></li>
                     </div> <!-- End of SearchCombo -->
                 </ul> <!-- End of MenuWrap -->
@@ -59,21 +61,20 @@
         </div> <!-- End of WelcomeWrapper section -->
 
       <!-- =============== About Us Section =============== -->
-      <section id="about" class="section-about-us">
-      <div class="Filler">  
-      <div class="Container AboutUsWrapper"> 
-        <div class="AboutUsImage" style="background-image: url('images/about-us.jpg');">
-          
-        </div> <!-- End of image-container -->
-
-        <div class="AboutUsText">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pharetra vel turpis nunc. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Sed arcu non odio euismod.
-            <br>
-            Rutrum quisque non tellus orci ac. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi quis eleifend quam adipiscing vitae proin. Quisque egestas diam in arcu. Scelerisque in dictum non consectetur a erat nam at lectus. Eget lorem dolor sed viverra ipsum. Amet commodo nulla facilisi nullam vehicula ipsum.</p>
-        </div> <!-- End of text-container -->
-      </div> <!-- End of about-us-container -->
-    </div> <!-- End of Filler -->
+      <section id="about-section" class="section-about-us">
+        
+            <div class="Container AboutUsWrapper"> 
+                <div class="AboutUsImage">
+                    <img id="pingpong" src="images/about-us.jpg" alt="Image of a ping pong table."/>
+                </div> <!-- End of image-container -->
+                <div class="AboutUsText">
+                    <h2 id="AboutUsHeader">About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pharetra vel turpis nunc. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Sed arcu non odio euismod.
+                    <br>
+                    Rutrum quisque non tellus orci ac. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Nisi quis eleifend quam adipiscing vitae proin. Quisque egestas diam in arcu. Scelerisque in dictum non consectetur a erat nam at lectus. Eget lorem dolor sed viverra ipsum. Amet commodo nulla facilisi nullam vehicula ipsum.</p>
+                </div> <!-- End of text-container -->
+            </div> <!-- End of About Us Wrapper -->
+        
       </section> <!-- End of About Us section -->
 
       <!-- =============== Our Services Section =============== -->
@@ -90,7 +91,7 @@
               <h3>Digital Transformation</h3>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                  <!-- Digital Plans Link -->
-                   <button class="SpanButton" type="button">Digital Plans  <span class="icon">&#9654;</span></button>
+                   <button id="digital-button" class="SpanButton" type="button">Digital Plans  <span class="icon">&#9654;</span></button>
             </div>  <!-- End of digital-container -->
 
             <div class="MarketingContainer"> 
@@ -98,7 +99,7 @@
                 <h3>Marketing</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                   <!-- Marketing Plans Link -->
-                    <button class="SpanButton" type="button">Marketing Plans  <span class="icon">&#9654;</span></button>
+                    <button id="marketing-button" class="SpanButton" type="button">Marketing Plans  <span class="icon">&#9654;</span></button>
             </div>  <!-- End of marketing-container -->
 
             <div class="VideoContainer"> 
@@ -106,7 +107,7 @@
               <h3>Video Production</h3>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                  <!-- Video Production Plans Link -->
-                  <button class="SpanButton" type="button">Video Plans  <span class="icon">&#9654;</span></button>
+                  <button id="video-button" class="SpanButton" type="button">Video Plans  <span class="icon">&#9654;</span></button>
                 </div>  <!-- End of video-container -->
 
             <div class="WebContainer">
@@ -114,7 +115,7 @@
               <h3>Web Development</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                 <!-- Web Development Plans Link -->
-                <button class="SpanButton" type="button">Web Plans  <span class="icon">&#9654;</span></button>
+                <button id="web-button" class="SpanButton" type="button">Web Plans  <span class="icon">&#9654;</span></button>
             </div>  <!-- End of web-container -->
 
             <div class="PrintContainer">
@@ -122,7 +123,7 @@
               <h3>Print</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo.</p>
                 <!-- Print Plans Link -->
-                <button class="SpanButton" type="button">Print Plans  <span class="icon">&#9654;</span></button>
+                <button id="print-button" class="SpanButton" type="button">Print Plans  <span class="icon">&#9654;</span></button>
               </div>  <!-- End of print-container -->
 
           </div> <!-- End of services-grid-container -->
@@ -135,7 +136,7 @@
           <h2>Our Vision</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas ultricies mi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.</p>
             <!-- Learn More Link -->
-              <button type="button">Learn More  <span class="icon">&#9654;</span></button>
+              <button id="our-vision-button" type="button">Learn More  <span class="icon">&#9654;</span></button>
           </div> <!-- End of container -->
         </div> <!-- End of vision-container -->
       </section> <!-- End of Our Vision section -->

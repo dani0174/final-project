@@ -90,7 +90,7 @@ body{
 p{
 	font-size: 100%;
 	line-height: 1.5;
-	text-align: center;
+	text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
@@ -100,7 +100,7 @@ h1{
 	font-weight: bold;
 	font-size: 71px;
 	line-height: 98px;
-	text-align: center;
+	text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
@@ -110,7 +110,7 @@ h2{
 	font-weight: bold;
 	font-size: 48px;
 	line-height: 98px;
-	text-align: center;
+	text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
@@ -120,7 +120,7 @@ h3{
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 98px;
-	text-align: center;
+	text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
@@ -195,6 +195,7 @@ header {
 	flex-direction: row;
 	align-items: center;
 	align-self: center;
+	padding: 5px;
 }
 
 a {
@@ -203,13 +204,42 @@ a {
 }
 
 #home-highlight{
-		background-color: #f44336;
-		
-		padding: 15px 25px;
+		background-color: #c78c06;
+		color: black;
+		padding: 5px;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
 }
+
+#logo{
+	padding: 0;
+	background-color: #c78c06;
+}
+
+#about{
+	padding: 5px;
+}
+
+#services{
+	padding: 5px;
+}
+
+#team{
+	padding: 5px;
+}
+
+#contact{
+	padding: 5px;
+}
+
+#SearchFont{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 164%;
+	width:635px;
+}
+
 
 /* End of Header Section CSS - Mobile */
 
@@ -218,6 +248,8 @@ a {
 .WelcomeButton {
 	color: black;
 	background-color: #c78c06;
+	width: 255px;
+	height: 95px;
 }
 
 .Welcome {
@@ -248,26 +280,41 @@ a {
 
 /* =============== About Us Section CSS - Mobile =============== */
 
-.AboutUsWrapper {
+.Filler {
 	display: flex;
+	flex-direction: column;
 	background-color: #ffe6ac;
 	width: 100%;
-	justify-content: space-evenly;
+	margin: 0 auto;
 }
 
-.AboutUsImage {
-	width: 42%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.AboutUsImage{
+	padding-top: 16px;
+}
+
+.AboutUsWrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffe6ac;
+	width: 100%;
+	margin: 0 auto;
+	
 }
 
 .AboutUsText {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	line-height: 21px;
-	width: 42%;
+	width: 680px;
 	display: flex;
+	flex-direction: column;
+	padding-bottom: 16px;
+	margin: 0 auto;
+}
+
+#pingpong{
+	width: 680px;
+	height: 340px;
 }
 
 /* End of About Us Section CSS - Mobile */
@@ -279,6 +326,7 @@ a {
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
 	justify-items: center;
+	gap: 1em;
 }
 
 .ServicesHeader {
@@ -327,6 +375,31 @@ a {
 	padding: 5px;	
 }
 
+#digital-button{
+	width: 220px;
+	height: 95px;
+}
+
+#marketing-button{
+	width: 255px;
+	height: 95px;
+}
+
+#video-button{
+	width:212px;
+	height: 95px;
+}
+
+#web-button{
+	width: 202px;
+	height: 95px;
+}
+
+#print-button{
+	width: 205px;
+	height: 95px;
+}
+
 /* End of Our Services Section CSS - Mobile */
 
 
@@ -337,6 +410,12 @@ a {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+#our-vision-button{
+	width: 212px;
+	height: 94px;
+	border: #c78c06;
 }
 
 /* End of Our Vision Section CSS - Mobile */
@@ -513,7 +592,7 @@ footer {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 16px;
 		background-color: #FFFFFF;
-		text-align: center;
+		text-align: left;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -521,7 +600,7 @@ footer {
 	p{
 		font-size: 100%;
 		line-height: 1.5;
-		text-align: center;
+		text-align: left;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -541,7 +620,7 @@ footer {
 		font-weight: bold;
 		font-size: 81px;
 		line-height: 112px;
-		text-align: center;
+		text-align: left;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -551,7 +630,7 @@ footer {
 		font-weight: bold;
 		font-size: 54px;
 		line-height: 98px;
-		text-align:center;
+		text-align:left;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -561,7 +640,7 @@ footer {
 		font-weight: bold;
 		font-size: 36px;
 		line-height: 98px;
-		text-align: center;
+		text-align: left;
    		margin-left: auto;
     	margin-right: auto;
 	}
@@ -570,7 +649,7 @@ footer {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: bold;
 		font-size: 16px;
-		text-align: center;
+		text-align: left;
    		margin-left: auto;
     	margin-right: auto;
 	}
@@ -588,7 +667,7 @@ footer {
   }
 
   #home-highlight{
-	background-color: pink;
+	background-color: #c78c06;
 	padding: 15px 25px;
 	text-align: center;
 	text-decoration: none;
@@ -628,27 +707,39 @@ footer {
 
 /* =============== About Us Section CSS - Desktop =============== */
 
+#about-section {
+	background-color: #ffe6ac;
+	margin: 0 auto;
+}
+
 .AboutUsWrapper {
 	display: flex;
+	flex-direction: row;
 	background-color: #ffe6ac;
 	width: 100%;
 	justify-content: space-evenly;
+	padding-bottom: 16px;
 }
 
 .AboutUsImage {
-	width: 42%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	width: 50%;
+	background-color: #ffe6ac;
+	display: flex;
+	justify-content: center;
 }
 
 .AboutUsText {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	line-height: 21px;
-	width: 42%;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
+}
+
+#pingpong{
+	width: 100%;
+	height: 100%;
 }
 
 /* End of About Us Section CSS - Desktop */
@@ -699,6 +790,31 @@ footer {
 	align-self: stretch;
 }
 
+#digital-button{
+	width: 544px;
+	height: 108px;
+}
+
+#marketing-button{
+	width: 544px;
+	height: 108px;
+}
+
+#video-button{
+	width:346px;
+	height: 108px;
+}
+
+#web-button{
+	width: 346px;
+	height: 108px;
+}
+
+#print-button{
+	width: 346px;
+	height: 108px;
+}
+
 /* End of Our Services Section CSS - Desktop */
 
 /* =============== Our Vision Section CSS - Desktop =============== */
@@ -708,6 +824,12 @@ footer {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+#our-vision-button{
+	width: 243px;
+	height: 108px;
+	border: #c78c06;
 }
 
 /* End of Our Vision Section CSS - Desktop */
