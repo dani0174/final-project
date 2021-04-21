@@ -80,7 +80,7 @@
 
 body{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	background-color: #FFFFFF;
 	text-align: center;
     margin-left: auto;
@@ -97,7 +97,7 @@ p{
 
 h1{
 	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 71px;
 	line-height: 98px;
 	text-align: left;
@@ -107,7 +107,7 @@ h1{
 
 h2{
 	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 48px;
 	line-height: 98px;
 	text-align: left;
@@ -117,7 +117,7 @@ h2{
 
 h3{
 	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 36px;
 	line-height: 98px;
 	text-align: left;
@@ -127,7 +127,7 @@ h3{
 
 h4{
 	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 16px;
 	text-align: center;
    	margin-left: auto;
@@ -176,6 +176,7 @@ header {
 	color:#c78c06;
 	background-color: black;
 	border-color: #c78c06;
+	border-width: thin;
 }
 
 .Container, .Grid-Container{
@@ -188,6 +189,7 @@ header {
   flex-direction: column;
   margin: 0 auto;
   align-items: stretch;
+  font-size: 18px;
 }
 
 .SearchCombo{
@@ -196,6 +198,10 @@ header {
 	align-items: center;
 	align-self: center;
 	padding: 5px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
 }
 
 a {
@@ -207,36 +213,55 @@ a {
 		background-color: #c78c06;
 		color: black;
 		padding: 5px;
+		padding-top: 16px;
+		padding-bottom: 16px;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
 }
 
 #logo{
-	padding: 0;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	background-color: #c78c06;
+}
+
+#logo-image{
+	float: left;
+}
+
+.FillerBox{
 	background-color: #c78c06;
 }
 
 #about{
 	padding: 5px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 #services{
 	padding: 5px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 #team{
 	padding: 5px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 #contact{
 	padding: 5px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 #SearchFont{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
-	line-height: 164%;
+	line-height: 145%;
 	width:635px;
 }
 
@@ -250,18 +275,20 @@ a {
 	background-color: #c78c06;
 	width: 255px;
 	height: 95px;
+	margin-left: 0%;
 }
 
 .Welcome {
 	width: 100%;
-	height: 505px;
+	height: 465px;
 	background-color:rgba(46, 49, 49, 0.5); 
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content:flex-end;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
+	padding: 16px;
 }
 
 .WelcomeWrapper {
@@ -274,6 +301,15 @@ a {
 	background-size: cover;
 	align-items: center;
 	justify-content: center;
+}
+
+p{
+	font-size: 14px;
+	line-height: 21px;
+	text-align: left;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	line-height: 140%;
 }
 
 /* End of Welcome Section CSS - Mobile */
@@ -298,7 +334,6 @@ a {
 	background-color: #ffe6ac;
 	width: 100%;
 	margin: 0 auto;
-	
 }
 
 .AboutUsText {
@@ -317,6 +352,15 @@ a {
 	height: 340px;
 }
 
+p{
+	text-align: left;
+	line-height: 21px;
+}
+
+h2{
+	margin-left: 0%;
+}
+
 /* End of About Us Section CSS - Mobile */
 
 /* =============== Our Services Section CSS - Mobile =============== */
@@ -332,7 +376,7 @@ a {
 .ServicesHeader {
 	grid-column: 1;
 	grid-row: 1;
-	align-self:flex-start;
+	justify-self: left;
 }
 
 .DigitalContainer {
@@ -340,7 +384,7 @@ a {
 	grid-row: 2;
 	align-self: center;
 	background-color: #ffe6ac;
-	padding: 5px;	
+	padding-bottom: 16px;	
 }
 
 .MarketingContainer {
@@ -348,7 +392,7 @@ a {
 	grid-row: 3;
 	align-self: center;
 	background-color: #ffe6ac;
-	padding: 5px;
+	padding-bottom: 16px;
 }
 
 .VideoContainer {
@@ -356,7 +400,7 @@ a {
 	grid-row: 4;
 	align-self: center;
 	background-color: #ffe6ac;
-	padding: 5px;	
+	padding-bottom: 16px;	
 }
 
 .WebContainer {
@@ -364,7 +408,7 @@ a {
 	grid-row: 5;
 	align-self: center;
 	background-color: #ffe6ac;
-	padding: 5px;
+	padding-bottom: 16px;
 }
 
 .PrintContainer {
@@ -372,32 +416,102 @@ a {
 	grid-row: 6;
 	align-self: center;
 	background-color: #ffe6ac;
-	padding: 5px;	
+	padding-bottom: 16px;	
 }
 
 #digital-button{
 	width: 220px;
 	height: 95px;
+	float: left;
+	margin-left: 16px;
 }
 
 #marketing-button{
 	width: 255px;
 	height: 95px;
+	float: left;
+	margin-left: 16px;
 }
 
 #video-button{
 	width:212px;
 	height: 95px;
+	float: left;
+	margin-left: 16px;
 }
 
 #web-button{
 	width: 202px;
 	height: 95px;
+	float: left;
+	margin-left: 16px;
 }
 
 #print-button{
 	width: 205px;
 	height: 95px;
+	float: left;
+	margin-left: 16px;
+}
+
+#digital-image{
+	width: 100%;
+}
+
+#marketing-image{
+	width: 100%;
+}
+
+#video-image{
+	width: 100%;
+}
+
+#web-image{
+	width: 100%;
+}
+
+#print-image{
+	width: 100%;
+}
+
+#digital-h3{
+	margin-left: 16px;;
+}
+
+#digital-text{
+	margin-left: 16px;;
+}
+
+#marketing-h3{
+	margin-left: 16px;;
+}
+
+#marketing-text{
+	margin-left: 16px;;
+}
+
+#video-h3{
+	margin-left: 16px;;
+}
+
+#video-text{
+	margin-left: 16px;;
+}
+
+#web-h3{
+	margin-left: 16px;;
+}
+
+#web-text{
+	margin-left: 16px;;
+}
+
+#print-h3{
+	margin-left: 16px;;
+}
+
+#print-text{
+	margin-left: 16px;;
 }
 
 /* End of Our Services Section CSS - Mobile */
@@ -617,7 +731,7 @@ footer {
 	
 	h1{
 		font-family: 'Open Sans', sans-serif;
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 81px;
 		line-height: 112px;
 		text-align: left;
@@ -627,7 +741,7 @@ footer {
 	
 	h2{
 		font-family: 'Open Sans', sans-serif;
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 54px;
 		line-height: 98px;
 		text-align:left;
@@ -637,7 +751,7 @@ footer {
 	
 	h3{
 		font-family: 'Open Sans', sans-serif;
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 36px;
 		line-height: 98px;
 		text-align: left;
@@ -647,7 +761,7 @@ footer {
 	
 	h4{
 		font-family: 'Open Sans', sans-serif;
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 16px;
 		text-align: left;
    		margin-left: auto;
