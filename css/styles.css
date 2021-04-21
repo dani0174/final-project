@@ -149,7 +149,7 @@ button{
 }
 
 .SpanInput{
-	width: 100%;
+	width: 99%;
 	height: 35px;
 }
 
@@ -310,6 +310,11 @@ a {
 	padding-top: 32px;
 	padding-bottom: 32px;
 	line-height: 140%;
+}
+
+.WordBreak{
+	word-wrap: break-word;
+	width: 650px;
 }
 
 /* End of Welcome Section CSS - Mobile */
@@ -845,17 +850,45 @@ footer {
 	display:flex;
 	flex-direction: row;
 	margin: 0 auto;
-	justify-content:space-evenly;
-  }
+	justify-content:space-between;
+	align-items: center;
+	font-size: 20px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
 
-  #home-highlight{
+#home-highlight{
 	background-color: #c78c06;
-	padding: 15px 25px;
+	padding: 13px 24px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 }
+  
+#SearchFont{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 145%;
+	width:220px;
+	height: 39px;
+}
 
+.SearchButton{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color:#c78c06;
+	background-color: black;
+	border-color: #c78c06;
+	border-width: thin;
+	height: 45px;
+	width: 45px;
+}
+
+#logo{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: #c78c06;
+}
 
 /* End of Header Section CSS - Desktop */
 
@@ -871,6 +904,9 @@ footer {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
+	flex-wrap: wrap;
+	padding: 0px;
+	margin: 0px;
 }
 
 .WelcomeWrapper {
@@ -883,6 +919,26 @@ footer {
 	background-size: cover;
 	align-items: center;
 	justify-content: center;
+}
+
+#welcome-p{
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+	padding-left: 16px;
+}
+
+#welcome-h1{
+	padding-left: 16px;
+}
+
+#welcome-button{
+	margin-left: 16px;
+}
+
+.WordBreak{
+	word-wrap: break-word;
+	width: 1000px;
 }
 
 /* End of Welcome Section CSS - Desktop */
@@ -899,7 +955,8 @@ footer {
 	flex-direction: row;
 	background-color: #ffe6ac;
 	width: 100%;
-	justify-content: space-evenly;
+	justify-content: center;
+	align-content: center;
 	padding-bottom: 16px;
 }
 
@@ -912,16 +969,29 @@ footer {
 
 .AboutUsText {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	line-height: 21px;
+	font-size: 16px;
+	line-height: 24px;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
+	justify-content: left;
 }
 
 #pingpong{
 	width: 100%;
 	height: 100%;
+}
+
+h2{
+	margin-left: 0%;
+}
+
+#AboutUsHeader{
+	padding-left: 16px;
+}
+
+#about-p{
+	padding-left: 16px;
 }
 
 /* End of About Us Section CSS - Desktop */
@@ -1011,7 +1081,19 @@ footer {
 #our-vision-button{
 	width: 243px;
 	height: 108px;
-	border: #c78c06;
+	border-color: #c78c06;
+	border-width: thin;
+	background-color:rgba(46, 49, 49, 0.5);
+	float: left;
+	margin-left: 16px;
+}
+
+#vision-h3{
+	padding-left: 16px;
+}
+
+#vision-p{
+	padding-left: 16px;
 }
 
 /* End of Our Vision Section CSS - Desktop */
@@ -1038,6 +1120,7 @@ footer {
 .john-text {
 	grid-column: 2 / 2;
     grid-row: 2 / 2;
+	padding-top: 25px;
 }
 
 .bob-image {
@@ -1048,6 +1131,15 @@ footer {
 .bob-text {
 	grid-column: 1 / 1;
     grid-row: 3 / 3;
+	padding-top: 25px;
+}
+
+#john-h3{
+	padding-bottom: 10px;
+}
+
+#bob-h3{
+	padding-bottom: 10px;
 }
 
 /* End of Our Team Section CSS - Desktop */
@@ -1059,6 +1151,7 @@ footer {
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, auto);
 	gap: 1em;
+	align-items:flex-start;
 }
 
 .ContactHeader {
@@ -1078,6 +1171,11 @@ footer {
 .Location {
 	grid-column: 2 / 2;
     grid-row: 2 / 2;
+}
+
+#google-map-sizing{
+	width: 575px;
+	height: 450px;
 }
 
 .Hours {
