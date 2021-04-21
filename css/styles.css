@@ -129,7 +129,7 @@ h4{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 16px;
-	text-align: center;
+	text-align: left;
    	margin-left: auto;
     margin-right: auto;
 }
@@ -303,7 +303,7 @@ a {
 	justify-content: center;
 }
 
-p{
+#welcome-p{
 	font-size: 14px;
 	line-height: 21px;
 	text-align: left;
@@ -475,43 +475,43 @@ h2{
 }
 
 #digital-h3{
-	margin-left: 16px;;
+	margin-left: 16px;
 }
 
 #digital-text{
-	margin-left: 16px;;
+	margin-left: 16px;
 }
 
 #marketing-h3{
-	margin-left: 16px;;
+	margin-left: 16px;
 }
 
 #marketing-text{
-	margin-left: 16px;;
+	margin-left: 16px;
 }
 
 #video-h3{
-	margin-left: 16px;;
+	margin-left: 16px;
 }
 
 #video-text{
-	margin-left: 16px;;
+	margin-left: 16px;
 }
 
 #web-h3{
-	margin-left: 16px;;
+	margin-left: 16px;
 }
 
 #web-text{
-	margin-left: 16px;;
+	margin-left: 16px;
 }
 
 #print-h3{
-	margin-left: 16px;;
+	margin-left: 16px;
 }
 
 #print-text{
-	margin-left: 16px;;
+	margin-left: 16px;
 }
 
 /* End of Our Services Section CSS - Mobile */
@@ -524,12 +524,18 @@ h2{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 5px;
+	width: 100%;
+	height: 278px;
 }
 
 #our-vision-button{
 	width: 212px;
 	height: 94px;
-	border: #c78c06;
+	border-color: #c78c06;
+	border-width: thin;
+	background-color:rgba(46, 49, 49, 0.5);
+	float: left;
 }
 
 /* End of Our Vision Section CSS - Mobile */
@@ -568,6 +574,52 @@ h2{
 	grid-column: 1;
     grid-row: 5;
 	background-color: #ffe6ac;
+}
+
+#john-pic{
+	width: 100%;
+}
+
+#bob-pic{
+	width: 100%;
+}
+
+#john-h3{
+	margin-left: 16px;
+	line-height: normal;
+}
+
+#john-h4{
+	margin-left: 16px;
+}
+
+#john-p{
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+#bob-h3{
+	margin-left: 16px;
+	line-height: normal;
+}
+
+#bob-h4{
+	margin-left: 16px;
+}
+
+#bob-p{
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+#john-hr{
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+#bob-hr{
+	margin-left: 16px;
+	margin-right: 16px;
 }
 
 /* End of Our Team Section CSS - Mobile */
@@ -613,6 +665,18 @@ h2{
 	border-color: #c78c06;
 }
 
+#email-send-button{
+	float: left;
+}
+
+#email-h3{
+	margin: 0;
+}
+
+#larger-input-area{
+	height: 148px;
+}
+
 .table, th, td {
 	border: 1px solid black;
 }
@@ -641,6 +705,7 @@ table {
   th,
   td {
 	padding: 15px;
+	text-align: left;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -673,9 +738,12 @@ footer {
 }
 
 .Copyright {
-	padding-left: 6em;
-	padding-top: 2em;
-	padding-bottom: 2em;	
+	margin: 0;
+	padding: 16px;	
+}
+
+#unsplash-link{
+	text-decoration: underline;
 }
 
 /* End of Footer Section CSS - Mobile */
