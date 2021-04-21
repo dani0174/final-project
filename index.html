@@ -27,18 +27,13 @@
         <nav class="Container NavWrapper">
               <div class="Container">
                 <ul class="MenuWrap" id="horizontal-menu">
-                    <div id="filler" class="FillerBox">
-                        <li id="logo" class="navLink"><a href="#home"><img id="logo-image" title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/></a></li>
-                    </div> <!-- End of FillerBox -->
-                    <li id="home-highlight" class="navLink"><a id="home-highlight" href="#home">Home</a></li>
+                    <li id="logo" class="navLink"><a href="#home"><img id="logo-image" title="Three Star Media Company Logo" src="images/logo.png" alt="Image of the company logo, consisting of 3 stylized stars to match company name."/></a></li>
+                    <li id="home-highlight-li" class="navLink"><a id="home-highlight-a" href="#home">Home</a></li>
                     <li id="about" class="navLink"><a href="#about">About Us</a></li>
-                    <li id="services" class="navLink"><a href="#services">Services</a></li>
-                    <li id="team" class="navLink"><a href="#team">Team</a></li>
-                    <li id="contact" class="navLink"><a href="#contact">Contact</a></li>    
-                    <div class="SearchCombo">
-                        <li class="navLink"><input id="SearchFont" type="text" placeholder="Search" name="search"></li>
-                        <li class="navLink"><button class="SearchButton" type="submit"><i class="fa fa-search"></i></button></li>
-                    </div> <!-- End of SearchCombo -->
+                    <li id="services-li" class="navLink"><a href="#services">Services</a></li>
+                    <li id="team-li" class="navLink"><a href="#team">Team</a></li>
+                    <li id="contact-li" class="navLink"><a href="#contact">Contact</a></li>   
+                    <li id="SearchCombo" class="navLink"><input id="SearchFont" type="text" placeholder="Search" name="search"><button class="SearchButton" type="submit"><i class="fa fa-search"></i></button></li>
                 </ul> <!-- End of MenuWrap -->
               </div> <!-- End of Container -->
         </nav> <!-- End of NavWrapper section -->
@@ -192,7 +187,7 @@
                     <label for="email">Email</label><br>
                     <input class="SpanInput" type="email" id="email" name="email" required><br><br>
                     <label for="message">Message</label><br>
-                    <textarea id="larger-input-area" class="SpanInput" id="message" name="message" required></textarea><br>
+                    <textarea class="SpanInput" id="message" name="message" required></textarea><br>
                     <br>
                     <input id="email-send-button" type="submit" value="Send" class="SendButton">
                   </form>

@@ -157,10 +157,6 @@ label {
 	float: left;
 }
 
-textarea{
-	height: 150px;
-}
-
 /* --------------- Common Elements Styling Ends Here - Mobile --------------- */
 
 /* =============== Header Section CSS - Mobile =============== */
@@ -168,6 +164,7 @@ textarea{
 header {
 	background-color: black;
 	margin: 0 auto;
+	padding-top: 16px;
 }
 
 .SearchButton{
@@ -192,7 +189,7 @@ header {
   font-size: 18px;
 }
 
-.SearchCombo{
+#SearchCombo{
 	display:flex;
 	flex-direction: row;
 	align-items: center;
@@ -209,15 +206,23 @@ a {
     text-decoration: none;
 }
 
-#home-highlight{
-		background-color: #c78c06;
-		color: black;
-		padding: 5px;
-		padding-top: 16px;
-		padding-bottom: 16px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
+#home-highlight-li{
+	background-color: #c78c06;
+	color: black;
+	padding: 5px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#home-highlight-a{
+	background-color: #c78c06;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
 }
 
 #logo{
@@ -240,19 +245,19 @@ a {
 	padding-bottom: 16px;
 }
 
-#services{
+#services-li{
 	padding: 5px;
 	padding-top: 16px;
 	padding-bottom: 16px;
 }
 
-#team{
+#team-li{
 	padding: 5px;
 	padding-top: 16px;
 	padding-bottom: 16px;
 }
 
-#contact{
+#contact-li{
 	padding: 5px;
 	padding-top: 16px;
 	padding-bottom: 16px;
@@ -264,7 +269,6 @@ a {
 	line-height: 145%;
 	width:635px;
 }
-
 
 /* End of Header Section CSS - Mobile */
 
@@ -678,7 +682,7 @@ h2{
 	margin: 0;
 }
 
-#larger-input-area{
+#message{
 	height: 148px;
 }
 
@@ -845,6 +849,9 @@ footer {
 
 /* =============== Header Section CSS - Desktop =============== */
 
+header {
+	padding-top: 0px;
+}
 
 .MenuWrap{
 	display:flex;
@@ -857,7 +864,15 @@ footer {
 	padding-bottom: 35px;
 }
 
-#home-highlight{
+#home-highlight-li{
+	background-color: #c78c06;
+	padding: 13px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#home-highlight-a{
 	background-color: #c78c06;
 	padding: 13px 24px;
 	text-align: center;
@@ -1181,6 +1196,7 @@ h2{
 .Hours {
 	grid-column: 1 / span 2;
     grid-row: 3 / 3;
+	padding-bottom: 16px;
 }
 
 /* End of Contact Us Section CSS - Desktop */
